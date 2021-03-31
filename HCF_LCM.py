@@ -1,4 +1,4 @@
-def HCF(nums):
+def HCF(nums):                                      # Returns Highest Common factor of a list of numbers
     vals = []
     for i in range(1, min(nums)+1):
         if not False in list(map(lambda x : x % i == 0, nums)):
@@ -17,7 +17,7 @@ def divide(a, b):
 
 
 
-def LCM(numlist):
+def LCM(numlist):                                           # Returns Least Common Multiple of a list of numbers
     vals = [1]
     j = 1
     while numlist != [1] * len(numlist):
@@ -33,6 +33,6 @@ def LCM(numlist):
         pdt *= val
     return pdt
 
-inp = list(map(int,input('Enter numbers separated by space: ').split()))
+inp = list(map(int,input('Enter numbers separated by space: ').split()))    # Input the list separated by space
 print('HCF: ',HCF(inp))
 print('LCM: ',LCM(inp))
