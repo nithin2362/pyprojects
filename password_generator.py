@@ -1,7 +1,7 @@
-from random import randint, shuffle
+from random import randint, shuffle             # Imprting necessary modules
 
 
-def getvalues(n):
+def getvalues(n):                               # Inputs values for custom password
     cap, small, char, num = 0, 0, 0, 0
     userdef = 0
     while userdef not in [1, 2]:
@@ -30,7 +30,7 @@ def getvalues(n):
     return cap, small, char, num
 
 
-def password_generator(n):
+def password_generator(n):                                  # Generates the Password (Random or custom)
     if n == 0:
         raise RuntimeError('Password can\'t be of zero length !')
 
@@ -65,8 +65,8 @@ def password_generator(n):
     return passwords
 
 
-if __name__ == '__main__':
-    n = int(input('Password Length: '))
+if __name__ == '__main__':              
+    n = int(input('Password Length: '))                 # Enter the length of the password
     pwds = password_generator(n)
     print('\nPassword(s): ', end='\n\t\t')
     for i in range(len(pwds)):
