@@ -1,9 +1,9 @@
-from PIL import Image                           // Importing necessary modules
+from PIL import Image                           # Importing necessary modules
 import numpy as np 
 
 
 
-def is_color_image(image_name):                 // Returns whether an image is Colour or Black and White image
+def is_color_image(image_name):                 # Returns whether an image is Colour or Black and White image
 
   image = Image.open(image_name)
   final = {True:'Colour Image',False:'Black and White Image'}
@@ -23,4 +23,4 @@ def is_color_image(image_name):                 // Returns whether an image is C
 
 
 
-print(is_color_image(input('Enter image name: '))) // Giving the full file path of the image is preferred.
+print(is_color_image(input('Enter image name: '))) # Giving the full file path of the image is preferred.
